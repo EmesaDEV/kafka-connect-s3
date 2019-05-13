@@ -13,6 +13,12 @@ Key Features:
  * Easily read from a specific topic and partition - Index files make reading a particular offset very efficient, so you only have to download the data that you need.
  * Seek to a date & time - Your bucket will be broken into daily prefixes, which makes it possible to find data that was written around a specific date and time.
 
+## Emesa Fork
+***NOTE*** Currently this code is used by Emesa to organize Kafka production backups to AWS S3 buckets. Detailed explanation [here](https://emesadev.atlassian.net/wiki/spaces/IA/pages/238288929/Kafka+production+backup+restore+setup).
+
+The Emesa Fork differs from the [Spreadfast parent](https://github.com/spredfast/kafka-connect-s3) because it uses a newer version of the aws-java-sdk-s3. This was necessary in order to support AWS eu-central-1 region.  
+
+
 ## Spredfast Fork
 
 This is a hard fork of the [S3 Sink created by DeviantArt](https://github.com/DeviantArt/kafka-connect-s3).
